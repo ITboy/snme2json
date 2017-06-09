@@ -64,7 +64,7 @@ let modifyFirstLine = function modifyFirstLine(line) {
   return "{";
 };
 
-let modifyObjStart = function modifyObjStart(line, prevTag) {
+let modifyObjStart = function modifyObjStart(line) {
   const keyword = line.split(/\s+/)[0];
   return `"${keyword}":{`;
 };
@@ -73,7 +73,7 @@ let modifyObjEnd = function modifyObjEnd(line, nextTag) {
   return isEnd(nextTag) ? "}" : "},";
 };
 
-let modifyArrStart = function modifyArrStart(line, prevTag) {
+let modifyArrStart = function modifyArrStart(line) {
   const keyword = line.split(/\s+/)[0];
   return `"${keyword}":[`;
 };
