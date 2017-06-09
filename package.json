@@ -1,0 +1,31 @@
+{
+  "name": "snme2json",
+  "version": "1.0.0",
+  "description": "convert eIUM's snme structure to json",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITboy/snme2json.git"
+  },
+  "keywords": [
+    "snme",
+    "eIUM",
+    "eium",
+    "json"
+  ],
+  "author": "prepper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ITboy/snme2json/issues"
+  },
+  "homepage": "https://github.com/ITboy/snme2json#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "rewire": "^2.5.2"
+  }
+}
