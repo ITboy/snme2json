@@ -101,7 +101,7 @@ let isEnd = function isEnd(tag) {
 };
 
 module.exports = function snme2json(snme) {
-  let lines = snme.split(/\r?\n/);
+  let lines = snme.trim().split(/\r?\n/);
 
   return lines.map(line => line.trim())
   .map((line, index, lines) => {
